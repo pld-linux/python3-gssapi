@@ -7,20 +7,20 @@
 Summary:	Python GSSAPI Wrapper
 Summary(pl.UTF-8):	Pythonowy interfejs do GSSAPI
 Name:		python3-%{module}
-Version:	1.11.1
+Version:	1.12.0
 Release:	1
 License:	ISC
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/gssapi/
 Source0:	https://files.pythonhosted.org/packages/source/g/gssapi/gssapi-%{version}.tar.gz
-# Source0-md5:	70a141343b95b3e7d97a174b9ab52488
+# Source0-md5:	a139f609d073d0eb6734e68248b6832a
 URL:		https://pypi.org/project/gssapi/
 %if %{with krb5}
 BuildRequires:	krb5-devel
 %else
 BuildRequires:	heimdal-devel
 %endif
-BuildRequires:	python3-Cython = 3.2.4
+BuildRequires:	python3-Cython = 3.3.0
 BuildRequires:	python3-build
 BuildRequires:	python3-devel >= 1:3.9
 BuildRequires:	python3-installer
